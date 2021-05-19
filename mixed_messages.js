@@ -6,7 +6,9 @@ let messages = ['Vor dem Spiel ist nach dem Spiel',
                 'Es ist wichtig, dass man neunzig Minuten mit voller Konzentration an das nächste Spiel denkt']
 
 // select random message
-var randomMessage = messages[Math.floor(Math.random()*messages.length)];
+function randomMessage() {
+    return console.log(messages[Math.floor(Math.random()*messages.length)])
+}
 
 // log the output to the console
-console.log('Dein persönliches Fußballer-Zitat des Tages: '+randomMessage)
+randomMessage()
